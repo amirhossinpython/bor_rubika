@@ -1,1 +1,1 @@
-# bor_rubika
+# bot_rubika
