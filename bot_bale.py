@@ -293,7 +293,7 @@ async def on_message(message:Message):
         
     
     
-    elif message.content ==""    
+    
                
         
         
