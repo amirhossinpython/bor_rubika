@@ -1,3 +1,15 @@
+
+
+os.system("pip install rubpy ")
+os.system("pip install asyncio")
+os.system("pip install  khayyam")
+os.system("pip install requests")
+os.system("pip install pyjokes")
+os.system("pip install deep_translator")
+os.system("pip install  gtts")
+os.system("pip install  pyowm")
+os.system("pip install shutil")
+os.system("pip install phonenumbers")
 from rubpy import Client, handlers, Message
 import asyncio
 import random
@@ -29,18 +41,6 @@ import socket
 from httpx import AsyncClient
 from asyncio import run, create_task, sleep as aiosleep
 import sys
-
-os.system("pip install rubpy ")
-os.system("pip install asyncio")
-os.system("pip install  khayyam")
-os.system("pip install requests")
-os.system("pip install pyjokes")
-os.system("pip install deep_translator")
-os.system("pip install  gtts")
-os.system("pip install  pyowm")
-os.system("pip install shutil")
-os.system("pip install phonenumbers")
-
 group_admins = []
 silence_list = []
 no_gifs = False
