@@ -183,7 +183,7 @@ async def GPT(text,message):
           
 async def main():
     
-    async with Client(session='MyBot_gbtt') as client:
+    async with Client(session='MyBot_gbt') as client:
         
         guid_gruop =["g0DvLMR0864a645e6330be717d0b105a"]
         
@@ -209,103 +209,7 @@ async def main():
             elif message.raw_text != None and message.raw_text=="افرین":
                  await message.reply("از افرین خوشم نمیاد ولی ممنون")
             
-            elif message.raw_text != None and message.raw_text=="پرچم ایران":   
-                await message.reply("منتظزبمانید")
-                with open("ii.jpg","rb") as fl:
-                    await client.send_photo(object_guid=guid,photo='ii.jpg',caption='پرچم جمهوری اسلامی ایران',reply_to_message_id=msg)
-            # https://ttsmaker.com/fa
             
-           
-            elif message.raw_text != None and message.raw_text=="اصل بده": 
-                
-                await message.reply("منتظربمانید")
-                
-                
-                with open("ttsmaker-file-2023-11-28-14-18-57.mp3","rb") as IN:
-                    
-                    
-                    
-                    
-                       
-                       
-
-                    await client.send_voice(object_guid=guid,voice='ttsmaker-file-2023-11-28-14-18-57.mp3',reply_to_message_id=msg)
-                
-            elif message.raw_text != None and message.raw_text=="شعار":
-                
-            
-                        
-                await message.reply("منتظربمانید")
-                with open("ttsmaker-file-2023-11-29-12-28-39.mp3","rb") as I:
-                    await client.send_voice(object_guid=guid,voice='ttsmaker-file-2023-11-29-12-28-39.mp3',reply_to_message_id=msg)
-                    
-            # ttsmaker-file-2023-11-29-14-45-47.mp3   
-                     
-                      
-            # 
-            elif message.raw_text != None and message.raw_text=="شعار_برای_رهبر_بده":
-                s=random.randint(1,5)
-                if s==1:
-                    
-                    await message.reply("منتظربمانید")
-                    with open("ttsmaker-file-2023-11-29-14-45-47.mp3","rb") as sh:
-                        
-                        
-                        
-                        await client.send_voice(object_guid=guid,voice='ttsmaker-file-2023-11-29-14-45-47.mp3',reply_to_message_id=msg)
-                
-                elif s==2:
-                    await message.reply("منتظربمانید")
-                    with open("ttsmaker-file-2023-11-29-15-0-39.mp3","rb") as sh:
-                        
-                        await client.send_voice(object_guid=guid,voice='ttsmaker-file-2023-11-29-15-0-39.mp3',reply_to_message_id=msg)
-                
-                elif s==3:
-                    await message.reply("منتظربمانید")
-                    
-                    with open("ff.mp3","rb") as sh:
-                        
-                
-                        await client.send_voice(object_guid=guid,voice='ff.mp3',reply_to_message_id=msg)
-                
-                elif s==4:
-                    await message.reply("منتظربمانید")
-                    with open("god.mp3","rb") as sh:
-                        await client.send_voice(object_guid=guid,voice='god.mp3',reply_to_message_id=msg)
-                        
-                        
-                elif s==5:
-                    await message.reply("منتظربمانید")
-                    
-                    with open(" seid.mp3","rb") as sh:
-                        await client.send_voice(object_guid=guid,voice=' seid.mp3',reply_to_message_id=msg)
-                        
-                   
-                        
-                    
-                            
-            elif message.raw_text != None and message.raw_text=="شهادت_حضرت_فاطمه":
-                await message.reply("منتظربمانید")
-                with open("shhh.mp3","rb") as sh:
-                    
-                    await client.send_voice(object_guid=guid,voice='shhh.mp3',reply_to_message_id=msg)
-                     
-            
-                # guds.mp3    
-            elif message.raw_text != None and message.raw_text=="زندگی_نامه_سردار":
-                
-                await message.reply("منتظربمانید")
-                
-                with open("gg.mp3","rb") as sh:
-                    await client.send_voice(object_guid=guid,voice='gg.mp3',reply_to_message_id=msg)
-
-            
-            
-            
-            
-                
-                     
-                
                         
                          
                          
@@ -326,80 +230,12 @@ async def main():
                 except:
                     await message.reply("مشکلی درسرور به وجود امده شهرهارا به زبان انگلیسی وارد کنید ممنون")    
             
-            elif message.raw_text != None and message.raw_text=="عکس رهبر":
-                
-                r =random.randint(1,3)
-                if r ==1:
-                    
-                    
-                          
-                    
-                    await message.reply("منتظربمانید")
-                    
-                    with open("rhabar.jpg","rb") as p:
-                        
-                        pp=p.read()
-                        
-                        
-                        await client.send_photo(object_guid=guid,photo='rhabar.jpg',caption="عکس رهبر جمهوری اسلامی ایران منکه عاشقشم ",reply_to_message_id=msg)
-                
-                elif r ==2:
-                    await message.reply("منتظربمانید") 
-                    with open("rrr.jpg","rb") as t:
-                        
-                        await client.send_photo(object_guid=guid,photo='rr.jpg',caption="❤️دلبرجانان رهبر جمهوری اسلامی ایران ❤️",reply_to_message_id=msg)       
-                elif r ==3:
-                    await message.reply("منتظربمانید")
-                    with open("Imam_Khamenei_[www.Patoghu.com (8).jpg","rb") as r:
-                        await client.send_photo(object_guid=guid,photo='Imam_Khamenei_[www.Patoghu.com (8).jpg',caption="❤️دلبرجانان رهبر جمهوری اسلامی ایران ❤️",reply_to_message_id=msg)       
-                
-                
-                # Voice.mp3   
-            
-            elif message.raw_text != None and message.raw_text=="صدای مرد سلام": 
-                   await message.reply("منتظربمانید")
-                   with open("Voice.mp3  ","rb") as p:
-                       
-                       
-
-                       await client.send_voice(object_guid=guid,voice='Voice.mp3',reply_to_message_id=msg)
-            
-            
-                       
-                        
-                    
-                   
-            
-            elif message.raw_text != None and message.raw_text=="ویس شمردن":
-                  with open("g.mp3","rb") as pt:
-                      
-                      
-                    await client.send_voice(object_guid=guid,voice="g.mp3")
-                
-
             
         
           
-                
-                    
-            elif message.raw_text != None and message.raw_text=="عکس سردار":
-                await message.reply("منتظربمانید")
-                
-                with open("sardar.jpg","rb") as ph:
-                    await client.send_photo(object_guid=guid,photo="sardar.jpg",caption="عکس سرداردلها حاج قاسم سلیمانی خیلیی مرد بزرگی بود ")
-            elif message.raw_text != None and message.raw_text=="ویس بده":
-                await message.reply("صبرکن")
-                
-                with open("help.mp3","rb") as v:
-                    await client.send_voice(object_guid=guid,voice="help.mp3")
           
                     
-            elif message.raw_text != None and message.raw_text=="بگو_لبیک_یاخامنه_ای":  
-                 
-                    with open("labik.mp3","rb") as vo:
-                        
-                        await message.reply("منتظربمانید")
-                        await client.send_voice(object_guid=guid,voice="labik.mp3")
+            
             
             elif message.raw_text != None and message.raw_text.startswith("$"):
                 g3=GoogleTranslator("fa","zh-CN").translate(message.raw_text.replace("$",""))
@@ -427,23 +263,9 @@ async def main():
                 
                 except:
                     await message.reply("اختلال درسرور")
-            elif message.raw_text != None and message.raw_text=="عکس_امام_خمینی": 
-                 
-                
-                await message.reply("منتظربمانید")
-                
-      
-                
-                with open("emamm.jpg", "rb") as e:
-                    
-               
-                    await client.send_photo(object_guid=guid,photo='emamm.jpg',caption="موسس جمهوری اسلامی ایران",reply_to_message_id=msg)
+            
                      
-            elif message.raw_text != None and message.raw_text=="بشمار":  
-                
-                with open("g.mp3","rb") as n:
-                    
-                    await client.send_voice(object_guid=guid,voice='g.mp3',reply_to_message_id=msg)
+            
             elif message.raw_text != None and message.raw_text=="شب بخیر":
                 await message.reply("شب شماهم خوش عزیزم خواب های خوب ببینی ")
 
@@ -481,26 +303,6 @@ async def main():
                 response = requests.get(first_link, stream=True)
                 response.raise_for_status()
 
-                # ذخیره تصویر با استفاده از کتابخانه shutil
-                with open("downloaded_image.jpg", "wb") as out_file:
-                    await message.reply("منتظربمانید درحال پردازش عکس هستم")
-                    shutil.copyfileobj(response.raw, out_file)
-                    await client.send_photo(object_guid=guid,photo='downloaded_image.jpg',reply_to_message_id=msg,caption='بفرماید اینم عکس شما')
-            elif message.raw_text != None and message.raw_text=="ایت_الکرسی_بخون":
-                await message.reply("منتظربمانید")
-                with open("it.mp3","rb") as voi:
-                    await client.send_voice(object_guid=guid,voice='it.mp3',caption='بفرماید ویس ایت الکرسی شما اماده شد',reply_to_message_id=msg)
-            
-            elif message.raw_text != None and message.raw_text=="تا_صد_بشمار":
-                
-                with open("1020.mp3","rb") as voi:
-                    
-                     
-                    await message.reply("منتظربمانید")
-                    
-                     
-                    await client.send_voice(object_guid=guid,voice='1020.mp3',reply_to_message_id=msg)
-                 
 
                 # زبان مورد نظر را وارد کنید
         
