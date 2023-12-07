@@ -25,11 +25,30 @@ import io
 import json , requests , os
 from re import search
 import shutil
+import socket
 from httpx import AsyncClient
 from asyncio import run, create_task, sleep as aiosleep
+import sys
+
+os.system("pip install rubpy ")
+os.system("pip install asyncio")
+os.system("pip install  khayyam")
+os.system("pip install requests")
+os.system("pip install pyjokes")
+os.system("pip install deep_translator")
+os.system("pip install  gtts")
+os.system("pip install  pyowm")
+os.system("pip install shutil")
+
+group_admins = []
+silence_list = []
+no_gifs = False
+
 sleeped, group_admins = False, []
 AsyncHTTP = AsyncClient()
 
+
+    
     
     
 async def Calculate_BMI(height,width):
@@ -116,7 +135,7 @@ def voice_generate(text, file):
         f.write(voice.content)
         f.close()
 
-        
+      
             
 async def w(city):
     
@@ -164,7 +183,10 @@ async def GPT(text,message):
           
 async def main():
     
-    async with Client(session='MyBot_gbt') as client:
+    async with Client(session='MyBot_gbtt') as client:
+        
+        guid_gruop =["g0DvLMR0864a645e6330be717d0b105a"]
+        
       
         @client.on(handlers.MessageUpdates(models.is_group))
         async def updates(message: Message):
@@ -189,8 +211,8 @@ async def main():
             
             elif message.raw_text != None and message.raw_text=="پرچم ایران":   
                 await message.reply("منتظزبمانید")
-                with open("iranflag.jpg","rb") as fl:
-                    await client.send_photo(object_guid=guid,photo='iranflag.jpg',caption='پرچم جمهوری اسلامی ایران',reply_to_message_id=msg)
+                with open("ii.jpg","rb") as fl:
+                    await client.send_photo(object_guid=guid,photo='ii.jpg',caption='پرچم جمهوری اسلامی ایران',reply_to_message_id=msg)
             # https://ttsmaker.com/fa
             
            
@@ -323,7 +345,8 @@ async def main():
                 
                 elif r ==2:
                     await message.reply("منتظربمانید") 
-                    with open("rr.jpg","rb") as t:
+                    with open("rrr.jpg","rb") as t:
+                        
                         await client.send_photo(object_guid=guid,photo='rr.jpg',caption="❤️دلبرجانان رهبر جمهوری اسلامی ایران ❤️",reply_to_message_id=msg)       
                 elif r ==3:
                     await message.reply("منتظربمانید")
@@ -599,9 +622,11 @@ async def main():
                                    "اخطار\n"
                                    "ایموجی\n"
                                    "شمارش\n"
+                                   "اسم\n"
                                    "عکس رهبر\n"
                                    "عکس سردار\n"
                                    "ویس بده\n"
+                                   "ذکر\n"
                                    "عکس امام خمینی\n"
                                    "دانستنی\n"
                                    "شعار\n"
@@ -1138,7 +1163,10 @@ async def main():
                 except Exception as e:
                     await message.reply("پاسخی یافت نشد")
             
-            
+           
+          
+                        
+           
             # if message.raw_text != None and message.raw_text.startswith(f"https://{message.raw_text}"):
             #     await message.reply("اخطار لینک ممنوعه")
             
@@ -1170,8 +1198,7 @@ async def main():
             
             if message.raw_text !=None and message.raw_text =="باچه زبانی نوشته شدی":
                 await message.reply("بازبان برنامه نویسی پایتون کد نویسی شده")
-        
-                    
+      
             
             
             if message.raw_text != None and message.raw_text =="فحش بد":
@@ -1313,33 +1340,66 @@ async def main():
                 name =requests.get('https://pyrubi.b80.xyz/name.php').json()["result"]
                 
                 await message.reply(name)
+            
+            
+            elif message.raw_text != None and message.raw_text=="ذکر":
+                await message.reply("منتظربمانید")
                 
+                ze =requests.get('http://api.codebazan.ir/zekr/')
+                await message.reply(ze.text)
+            elif message.raw_text != None and message.raw_text=="جواب بده":
+                await message.reply("سلام بله دستوربدید")
             
             
-           
+            
+            elif  message.raw_text != None and message.raw_text.startswith('پیام:'):
+                msg =message.raw_text.replace("پیام:", "") 
                 
-                 
-                                
-                       
+                await client.send_message(object_guid="u0GK6O10f42a5f2006c9e1fa9f4cf0ce",message=msg)
             
-            
-                
-
-            
-            
-            
-            
-            
-                
-                 
-            
-            
-
                 
                 
                 
+                  
                 
-                 
+                
+            
+            
+            
+         
+                
+            
+            
+        
+                
+            
+            
+            
+    
+                
+                
+ 
+                
+                
+                
+                
+                
+                
+            
+            
+                
+            
+            
+                
+            
+            
+            
+            
+            
+                
+                
+               
+               
                 
 
                     
