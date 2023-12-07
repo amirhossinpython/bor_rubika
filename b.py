@@ -39,6 +39,7 @@ os.system("pip install deep_translator")
 os.system("pip install  gtts")
 os.system("pip install  pyowm")
 os.system("pip install shutil")
+os.system("pip install phonenumbers")
 
 group_admins = []
 silence_list = []
